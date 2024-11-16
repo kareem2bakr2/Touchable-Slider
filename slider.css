@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#mens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(rgba(133, 125, 125, 0.738),rgba(255,255,255,0));
+}
+.parent{
+    display: flex;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+margin: 10px;
+}
+
+
+.parent .product {
+    /* width: 200px !important; */
+    /* margin: 0px 20px; */
+    /* background-color: aqua; */ 
+    border-radius: 20px;
+    border: 2px solid rgba(60,60,60,0.3);
+    user-select: none;
+    padding-bottom: 25px;
+    transition: all 0.5s ease;
+}
+.parent .product:hover {
+border:2px solid #09c ;
+}
+.parent .product .photo {
+    margin:0% 0% 5% ;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.parent .product .price{
+    margin: 10px ;
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+
+}
+.parent .product .details {
+font-size: 18px;
+color: #777;
+margin: 20px 10px;
+
+}
+.parent .product .material-symbols-outlined{
+font-size: 20px;
+border:2px solid rgba(60,60,60,0.3);
+padding: 10px ;
+margin: 0 10px;
+border-radius: 50%;
+color: #ccc;
+transform: rotate(-45deg);
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.parent .product:hover .material-symbols-outlined {
+background-color:#09c ;
+color: white;
+border:2px solid #09c;
+
+}
+.swiper-button-next,.swiper-button-prev{
+    color: white;
+    /* font: ; */
+}
+.swiper-button-prev:after,.swiper-button-next:after {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #09c;
+    padding: 15px;
+}
